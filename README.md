@@ -25,3 +25,13 @@ Setup the apache2 vhosts file /etc/apache2/extra/http-vhosts.conf
 ,,,
 
 You will also need to edit the hosts file pointing the development domain (txn.dev) to 127.0.0.1.  The hosts file is located /private/etc/hosts.
+
+You can map the Home and End keys to mimic windows: 
+https://gist.github.com/1730936
+http://mwholt.blogspot.nl/2012/09/fix-home-and-end-keys-on-mac-os-x.html
+
+
+## Ubuntu Setup ##
+
+http://joshrendek.com/2013/01/securing-ubuntu/
+http://news.ycombinator.com/item?id=5087183
