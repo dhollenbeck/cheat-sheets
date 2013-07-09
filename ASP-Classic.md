@@ -94,7 +94,7 @@ json("message") = "Hello World"
 json.Flush
 ```
 
-### PARAMETERIZED QUERIES (avoids SQL injections)
+### PARAMETERIZED QUERIES
 The api should use parameterized query inputs to avoid sql injections.  This topic is
 discussed in length:
 
