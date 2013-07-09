@@ -156,5 +156,5 @@ You can validate inputs with functions:
 +   isNumeric()
 
 ### REFERENCES
-[http://www.w3schools.com/vbscript/vbscript_ref_functions.asp] (VBScript Function Reference)
-[http://www.w3schools.com/vbscript/vbscript_looping.asp] (VBScript Looping)
++   [http://www.w3schools.com/vbscript/vbscript_ref_functions.asp] (VBScript Function Reference)
++   [http://www.w3schools.com/vbscript/vbscript_looping.asp] (VBScript Looping)
