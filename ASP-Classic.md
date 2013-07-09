@@ -167,6 +167,7 @@ You can validate inputs with functions:
 +   isEmpty()
 +   isDate()
 +   isNumeric()
++   varType()
 
 ### REFERENCES
 +   [Request Methods](http://www.w3schools.com/asp/asp_ref_request.asp)
