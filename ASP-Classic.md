@@ -1,5 +1,18 @@
 # ASP API Notes:
 
+### HTTP REQUEST METHOD
+The api can determine the http request method
+```
+Set method = Request.ServerVariables("REQUEST_METHOD") //POST, GET, etc
+```
+
+### REQUEST VALUES
+The api can read posted form values and url query string values.
+```
+Set param = Request.QueryString("param")
+Set field = Request.Form("field")
+```
+
 ### HTTP RESPONSE CODES
 The api should specify the http response codes.
 
@@ -156,5 +169,6 @@ You can validate inputs with functions:
 +   isNumeric()
 
 ### REFERENCES
-+   [VBScript Function Reference] (http://www.w3schools.com/vbscript/vbscript_ref_functions.asp)
-+   [VBScript Looping] (http://www.w3schools.com/vbscript/vbscript_looping.asp)
++   [Request Methods](http://www.w3schools.com/asp/asp_ref_request.asp)
++   [Function Reference] (http://www.w3schools.com/vbscript/vbscript_ref_functions.asp)
++   [Looping] (http://www.w3schools.com/vbscript/vbscript_looping.asp)
