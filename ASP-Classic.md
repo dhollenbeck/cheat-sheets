@@ -1,4 +1,4 @@
-# ASP RestFul API Notes:
+# ASP API Notes:
 
 ### HTTP RESPONSE CODES
 The api should specify the http response codes.
