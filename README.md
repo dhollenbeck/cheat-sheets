@@ -6,30 +6,25 @@ Web development cheat-sheets.
 
 ## Mac Lion Setup
 
-All repos are stored in the user home folder ('/Users/dan/repos').  
+Install iTerm by downloading it from (http://www.iterm2.com/)[http://www.iterm2.com/]
 
-Setup the apache2 vhosts file /etc/apache2/extra/http-vhosts.conf
-,,,
-<Directory "/Users/dan/repos/">
-  Options +Indexes
-  Allow From All
-  AllowOverride All
-</Directory>
+Install .bash_profile and .gitconfig from your personal dotfile repos. Copy these files into your home dir.
 
-<VirtualHost *:80>
-    ServerAdmin wemaster@example.com
-    DocumentRoot "/Users/dan/repos/txn/app/public/"
-    ServerName txn.dev
-    ServerAlias www.txn.dev
-</VirtualHost>
-,,,
+Install mac github client. Setup app references including installing command line tools.
 
-You will also need to edit the hosts file pointing the development domain (txn.dev) to 127.0.0.1.  The hosts file is located /private/etc/hosts.
+Create dir to store your repos ('~/repos').  
 
-You can map the Home and End keys to mimic windows: 
+Install Sublime Text.
+Setup command line launcher (https://gist.github.com/olivierlacan/1195304)[https://gist.github.com/olivierlacan/1195304].
+
+Install Node.js by downloading it from (http://www.node.js/download/)[http://www.node.js/download/]
+Node will be installed into /usr/loca/bin/node. NPM will be installed into /usr/local/bin/npm. Make /usr/local/bin is in your $PATH.
+
+Install MAMP from (http:/www.mamp.info)[http:/www.mamp.info]
+
+Map the Home and End keys to mimic something useful: 
 https://gist.github.com/1730936
 http://mwholt.blogspot.nl/2012/09/fix-home-and-end-keys-on-mac-os-x.html
-
 
 ## Ubuntu Setup ##
 
