@@ -6,8 +6,6 @@ Web development cheat-sheets.
 
 ## Mac Lion Setup
 
-Install iTerm by downloading it from [http://www.iterm2.com/](http://www.iterm2.com/)
-
 Install .bash_profile and .gitconfig from your personal dotfile repos. Copy these files into your home dir.
 
 Install mac github client. Setup app references including installing command line tools.
