@@ -1,11 +1,6 @@
-# Ubuntu Setup #
+# UFW #
 
-http://joshrendek.com/2013/01/securing-ubuntu/
-http://news.ycombinator.com/item?id=5087183
-
-## UFW ##
-
-Use ufw to manage the firewall iptables.
+ ufw - program for managing a netfilter firewall and aims to provide an easy to use interface for the user.
 
 ### Resources ###
  - # man ufw
@@ -19,55 +14,66 @@ Use ufw to manage the firewall iptables.
  - show firewall status with each rule numbered
 
 ```bash
-#sudo ufw status numbered
+ubuntu@server:~# sudo ufw status numbered
+```
+
+ - show firewall status verbose
+
+```bash
+ubuntu@server:~# sudo ufw status verbose
 ```
 
  - set default policy,
 ```bash
-	#sudo ufw default deny
+ubuntu@server:~# sudo ufw default deny
 ```
 
  - enable or disable firewall,
 ```bash
-	#sudo ufw enable
-	#sudo ufw disable
+ubuntu@server:~# sudo ufw enable
+ubuntu@server:~# sudo ufw disable
 ```
 
  - deleting rules
 ```bash
-	#sudo ufw delete xx (where xx = rule number)
+ubuntu@server:~# sudo ufw delete xx (where xx = rule number)
 ```
 
  - insert rule to allow|deny port,
 ```bash
-	#ufw allow 80
+ubuntu@server:~# ufw allow 80
 ```
 
  - insert rule to allow everything from ip address,
 ```bash
-	#ufw allow from 97.79.131.82
+ubuntu@server:~# ufw allow from 97.79.131.82
 ```
 
  - insert rule to allow port from ip address,
 ```bash
-	#ufw allow from 97.79.131.82 to any port 22
-	#ufw allow from 97.79.131.82 to any port 3306
+ubuntu@server:~# ufw allow from 97.79.131.82 to any port 22
+ubuntu@server:~# ufw allow from 97.79.131.82 to any port 3306
 ```
 
  - insert rule to allow a specific interface traffice from a specific port to port 80
 ```bash
-	#sudo ufw allow in on eth0 from 192.168.1.0/24 to any port 80
+ubuntu@server:~# sudo ufw allow in on eth0 from 192.168.1.0/24 to any port 80
 ```
 ### Example ###
 
 Internal LAMP server:
 
 ```bash
-sudo ufw status
-	To                         Action      From
-	--                         ------      ----
-	80                         ALLOW       Anywhere
-	443                        ALLOW       Anywhere
-	3306                       ALLOW       192.168.1.0/24
-	22                         ALLOW       192.168.1.0/24
+ubuntu@server:~# sudo ufw status verbose
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22 on eth0                 ALLOW IN    192.168.1.0/24
+3306 on eth0               ALLOW IN    192.168.1.0/24
+80 on eth0                 ALLOW IN    Anywhere
+80 on eth0                 ALLOW IN    Anywhere (v6)
 ```
