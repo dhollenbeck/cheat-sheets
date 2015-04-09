@@ -12,25 +12,25 @@ ssh - Open SSH server
  - client install
 
 ```bash
-ubuntu@server:~# sudo apt-get install openssh-client
+sudo apt-get install openssh-client
 ```
 
  - server install
 
 ```bash
-ubuntu@server:~# sudo apt-get install openssh-server
+sudo apt-get install openssh-server
 ```
 
 - server config
 
 ```bash
-ubuntu@server:~# sudo vi /etc/ssh/sshd_config
+sudo vi /etc/ssh/sshd_config
 ```
 
 - server restart, start, stop
 
 ```bash
-ubuntu@server:~# sudo service ssh restart
+sudo service ssh restart
 ```
 
 ### Recommends Configuration Changes ###
