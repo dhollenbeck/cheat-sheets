@@ -46,13 +46,13 @@ ubuntu@server:~# ufw allow 80
 
  - insert rule to allow everything from ip address,
 ```bash
-ubuntu@server:~# ufw allow from 97.79.131.82
+ubuntu@server:~# ufw allow from xxx.xxx.xxx.xxx
 ```
 
  - insert rule to allow port from ip address,
 ```bash
-ubuntu@server:~# ufw allow from 97.79.131.82 to any port 22
-ubuntu@server:~# ufw allow from 97.79.131.82 to any port 3306
+ubuntu@server:~# ufw allow from xxx.xxx.xxx.xxx to any port 22
+ubuntu@server:~# ufw allow from xxx.xxx.xxx.xxx to any port 3306
 ```
 
  - insert rule to allow a specific interface traffice from a specific port to port 80
