@@ -3,6 +3,12 @@ cheat-sheets
 
 Web development cheat-sheets.
 
+## Git Logs
+
+git shortlog -s -n --all --since="365 days ago"
+
+git log --author="Dan" --pretty=format:'%ai, %an, %s,' --no-merges --since="365 days ago"
+
 
 ## Mac Lion Setup
 
