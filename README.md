@@ -28,6 +28,7 @@ http://mwholt.blogspot.nl/2012/09/fix-home-and-end-keys-on-mac-os-x.html
 
 # MYSQL
 
+```sql
 SHOW GLOBAL VARIABLES LIKE 'max_connections';
 SHOW GLOBAL STATUS LIKE 'max_used_connections';
-
+```
