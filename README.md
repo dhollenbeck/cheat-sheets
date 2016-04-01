@@ -3,7 +3,6 @@ cheat-sheets
 
 Web development cheat-sheets.
 
-
 ## Mac Lion Setup
 
 Install iTerm by downloading it from [http://www.iterm2.com/](http://www.iterm2.com/)
